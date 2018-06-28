@@ -18,6 +18,10 @@ html, body {
 .oneclick_phone-label{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 40px 0 30px;
+    border-radius: 10px;
 }
 
 .one__click-phonefield{
@@ -41,6 +45,10 @@ html, body {
     font-weight: 400;
     margin-top: 5px;
     display: inline;
+
+    &-center{
+        text-align: center;
+    }
 }
 
 .custom_title-right{
@@ -53,6 +61,7 @@ html, body {
 
 .one_click_cont{
     padding-left: 0;
+    text-align: center;
 }
 
 .input__num-form{
