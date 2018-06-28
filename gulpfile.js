@@ -30,7 +30,6 @@ var path = {
         js: '_dev/js/*.js',
         img: '_dev/img/**/*.*',
         fonts: '_dev/fonts/**/*.*',
-        pug: '_dev/*.pug'
     },
     watch: {
         html: '_dev/**/*.html',

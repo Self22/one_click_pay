@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sunburst.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Форма регистрации</title>
 </head>
@@ -23,7 +24,7 @@
                     </div>
                 </div>
                 <div class="row">
-                <button type="submit" class="btn btn btn-outline-primary col-md-4">Отправить</button>
+                <button type="submit" class="btn btn btn btn-outline-secondary col-md-4">Отправить</button>
                 </div>
 
             </form>
@@ -67,49 +68,149 @@
                 </label>
             </form>
         </div>
-
-            <p class="custom_title custom_title-center display-4 col-md-12 align-self-center">Для изменения внешнего вида кнопки перейдите в раздел <a href="" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <div class="custom_settings-block container">
+            <p class="custom_title custom_title-center display-4 col-md-12 align-self-center">Для изменения внешнего вида кнопки откройте раздел <a href="" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 Расширенные настройки
-            </a></p>
+            </a>
+            </p>
 
 
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        <div class="custom__settings-cont collapse" id="collapseExample">
+            <div class="container">
+                <div class="row">
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="container-fluid input_cont">
+                    <div class="row">
+                        <div class="input-group-prepend col-md-8">
+                        <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Ширина поля ввода, px</span>
+                        </div>
+                        <input type="number" class="form-control custom__settings-input col-md-3" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    </div>
+                </div>
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="container-fluid input_cont">
+                    <div class="row">
+                        <div class="input-group-prepend col-md-8">
+                            <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Ширина кнопки, px</span>
+                        </div>
+                        <input type="number" class="form-control custom__settings-input col-md-3" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    </div>
+                </div>
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="container-fluid input_cont">
+                    <div class="row">
+                        <div class="input-group-prepend col-md-8">
+                            <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Цвет border поля ввода</span>
+                        </div>
+                        <input type="text" class="form-control custom__settings-input col-md-3" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="#2FB125">
+                    </div>
+                    </div>
+                </div>
+
             </div>
+                <div class="row">
+                <div class="input-group input-group-sm mb-3 col-md-4">
+                    <div class="container-fluid input_cont">
+                        <div class="row">
+                        <div class="input-group-prepend col-md-8">
+                            <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Цвет background кнопки</span>
+                        </div>
+                        <input type="text" class="form-control custom__settings-input col-md-3" aria-label="Small" value="#2DBA23" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    </div>
+                </div>
+                    <div class="input-group input-group-sm mb-3 col-md-4">
+                        <div class="container-fluid input_cont">
+                        <div class="row">
+                            <div class="input-group-prepend col-md-8">
+                                <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Цвет border кнопки</span>
+                            </div>
+                            <input type="text" class=" custom__settings-input form-control col-md-3" aria-label="Small" value="#2FB125" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="input-group input-group-sm mb-3 col-md-4">
+                        <div class="container-fluid input_cont">
+                        <div class="row">
+                            <div class="input-group-prepend col-md-8">
+                                <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Border-radius, px</span>
+                            </div>
+                            <input type="number" class="form-control custom__settings-input col-md-3" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                        </div>
+                    </div>
+
+            </div>
+                <div class="row">
+                    <div class="input-group input-group-sm mb-3 col-md-4">
+                        <div class="container-fluid input_cont">
+                            <div class="row">
+                                <div class="input-group-prepend col-md-8">
+                                    <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Размер шрифта поля ввода, px</span>
+                                </div>
+                                <input type="number" class="form-control custom__settings-input col-md-3" aria-label="Small" value="16" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group input-group-sm mb-3 col-md-4">
+                        <div class="container-fluid input_cont">
+                            <div class="row">
+                                <div class="input-group-prepend col-md-8">
+                                    <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Толщина границы border, px</span>
+                                </div>
+                                <input type="number" class="form-control custom__settings-input col-md-3" aria-label="Small" value="1" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group input-group-sm mb-3 col-md-4">
+                        <button type="submit" class="custom_set-btn btn btn btn btn-outline-secondary ">Применить</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
         </div>
     </div>
     <div class="button__code-cont row">
+        <h3 class="col-md-10 custom_title display-4 align-self-center"><b>Шаг 3.</b> Скопируйте контейнер кнопки</h3>
         <div class="alert alert-success col-md-12" role="alert">
             <div class="container">
                 <div class="row">
-                    <h3 class="col-md-10 custom_title display-4 align-self-center">Скопируйте контейнер кнопки</h3>
                     <button type="button" class="col-md-2 copy__btn btn btn-outline-primary">Копировать</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+
                 </div>
             </div>
             <hr>
             <pre><code>&lt;div class="one_click_cont"&gt;
     &lt;a href="https://callme.sipiko.net/viber/order1click/index.php">Кормораздатчики&lt;/a&gt;
 &lt;/div&gt;</code></pre>
-            <hr>
         </div>
+        <h3 class="col-md-10 custom_title display-4 align-self-center"><b>Шаг 4.</b> Вставьте скопированный контейнер кнопки в html-код Вашего сайта - в то место, где Вы хотите её расположить.</h3>
+        <h3 class="col-md-10 custom_title display-4 align-self-center"><b>Шаг 5.</b> Скопируйте скрипт кнопки</h3>
         <div class="alert alert-success col-md-12" role="alert">
             <div class="container">
                 <div class="row">
-                    <h3 class="col-md-10 custom_title display-4 align-self-center">Скопируйте скрипт</h3>
+
                     <button type="button" class="col-md-2 copy__btn btn btn-outline-primary">Копировать</button>
                 </div>
             </div>
             <hr>
             <pre><code>&lt;script  id="order1click_script" data-viber_id="12345" src="https://callme.sipiko.net/viber/order1click/order1click.js"&gt;&lt;/script&gt;</code></pre>
-            <hr>
         </div>
+        <h3 class="col-md-10 custom_title display-4 align-self-center"><b>Шаг 6.</b> Вставьте скопированный скрипт кнопки в html-код Вашего сайта перед закрывающим тэгом <code>&lt;/body&gt;</code></h3>
 
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

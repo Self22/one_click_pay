@@ -20,7 +20,7 @@ html, body {
     flex-direction: row;
     justify-content: center;
     background-color: #f8f9fa;
-    padding: 40px 0 30px;
+    padding: 40px 0 40px;
     border-radius: 10px;
 }
 
@@ -42,6 +42,7 @@ html, body {
 
 .custom_title{
     font-size: 18px;
+    margin-bottom: 20px;
     font-weight: 400;
     margin-top: 5px;
     display: inline;
@@ -51,12 +52,33 @@ html, body {
     }
 }
 
-.custom_title-right{
-    text-align: right;
-}
-
 .copy__btn{
 
+}
+
+.custom_settings-block{
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.custom__settings-cont{
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}
+
+.input-group-prepend{
+  padding-right: 5px;
+}
+
+.custom__settings-label{
+  width: 100%;
+  font-size: 12px;
+}
+
+.custom__settings-input{
+  font-size: 12px;
 }
 
 .one_click_cont{
@@ -67,3 +89,13 @@ html, body {
 .input__num-form{
     padding: 0;
 }
+
+.input_cont{
+  padding: 0;
+}
+
+.custom_set-btn{
+  margin-left: 63%;
+  margin-top: 30px;
+}
+
