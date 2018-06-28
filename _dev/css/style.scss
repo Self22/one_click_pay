@@ -1,0 +1,60 @@
+//tools
+@import "_misc/mixins";
+@import "_misc/normalize";
+
+html, body {
+    min-height: 100%;
+    width: 100%;
+    line-height: 1.42;
+    position: relative;
+}
+
+.one_click_cont{
+
+    position: relative;
+    z-index: 1;
+}
+
+.oneclick_phone-label{
+    display: flex;
+    flex-direction: row;
+}
+
+.one__click-phonefield{
+
+}
+
+.one__click-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+    white-space: nowrap;
+}
+
+.button__img-cont, .button__code-cont{
+    margin-top: 40px;
+}
+
+.custom_title{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+    display: inline;
+}
+
+.custom_title-right{
+    text-align: right;
+}
+
+.copy__btn{
+
+}
+
+.one_click_cont{
+    padding-left: 0;
+}
+
+.input__num-form{
+    padding: 0;
+}

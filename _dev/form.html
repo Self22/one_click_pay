@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Форма регистрации</title>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="input__num-cont row">
+        <div class="col-md-6 custom_title-right align-self-center">
+            <h3 class="custom_title  display-4 ">Для получения кода для вставки на сайт введите идентификационный номер, который Вы получили при регистрации</h3>
+        </div>
+        <div class="col-md-6">
+            <form class="input__num-form">
+                <div class="row">
+                    <div class="form-group input__num-form col-md-6">
+                        <label for="InputIdNum"></label>
+                        <input required type="tel" class="form-control" id="InputIdNum"  maxlength="7" minlength="7">
+                    </div>
+                </div>
+                <div class="row">
+                <button type="submit" class="btn btn btn-outline-primary col-md-6">Отправить</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="button__img-cont row">
+        <h3 class="custom_title custom_title-right display-4 col-md-6 align-self-center">Ваша кнопка выглядит так</h3>
+        <div class="one_click_cont col-md-6" style="width: 250px;">
+            <form action="">
+                <label class="oneclick_phone-label" for="oneclick_phone">
+                    <input
+                            type="tel"
+                            id="oneclick_phone"
+                            name="oneclick_phone"
+                            class="one__click-phonefield"
+                            value="+38 (0"
+                            onkeyup="javascript:mask('oneclick_phone', '+38(000) 000-00-00', event);"
+                            style="
+                        padding: 10px;
+                        border: 1px solid #2FB125;
+                        border-radius: 4px 0 0 4px;
+                        width: 150px;
+                        font-size: 14px;
+">
+                    <a href=""
+                       class="one__click-submit"
+                       style="
+                    border: 1px solid #2eb025;
+                    padding: 8px 20px;
+                    color: white;
+                    background: green;
+                    border-radius: 0 4px 4px 0;
+                    font-size: 14px;
+                    background: linear-gradient(to bottom,rgba(44,193,33,1) 0,rgba(47,166,38,1) 100%);
+                    text-transform: uppercase;
+
+"  >
+                        в 1 клик
+                    </a>
+                </label>
+            </form>
+        </div>
+    </div>
+    <div class="button__code-cont row">
+        <div class="alert alert-success col-md-12" role="alert">
+            <div class="container">
+                <div class="row">
+                    <h3 class="col-md-10 custom_title display-4 align-self-center">Скопируйте контейнер кнопки</h3>
+                    <button type="button" class="col-md-2 copy__btn btn btn-outline-primary">Копировать</button>
+                </div>
+            </div>
+            <hr>
+            <pre><code>&lt;div class="one_click_cont"&gt;
+    &lt;a href="https://callme.sipiko.net/viber/order1click/index.php">Кормораздатчики&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+            <hr>
+        </div>
+        <div class="alert alert-success col-md-12" role="alert">
+            <div class="container">
+                <div class="row">
+                    <h3 class="col-md-10 custom_title display-4 align-self-center">Скопируйте скрипт</h3>
+                    <button type="button" class="col-md-2 copy__btn btn btn-outline-primary">Копировать</button>
+                </div>
+            </div>
+            <hr>
+            <pre><code>&lt;script  id="order1click_script" data-viber_id="12345" src="https://callme.sipiko.net/viber/order1click/order1click.js"&gt;&lt;/script&gt;</code></pre>
+            <hr>
+        </div>
+
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
