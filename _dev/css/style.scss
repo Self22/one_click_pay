@@ -9,6 +9,11 @@ html, body {
     position: relative;
 }
 
+.cont__main{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
 .one_click_cont{
 
     position: relative;
@@ -22,6 +27,7 @@ html, body {
     background-color: #f8f9fa;
     padding: 40px 0 40px;
     border-radius: 10px;
+
 }
 
 .one__click-phonefield{
@@ -42,10 +48,11 @@ html, body {
 
 .custom_title{
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-weight: 400;
-    margin-top: 5px;
+    margin-top: 15px;
     display: inline;
+    line-height: 1.42;
 
     &-center{
         text-align: center;

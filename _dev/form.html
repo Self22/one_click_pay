@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/sunburst.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
     <title>Форма регистрации</title>
 </head>
 <body>
 
-<div class="container">
+<div class="container cont__main">
 
     <div class="input__num-cont row">
         <div class="col-md-6 custom_title-right align-self-center">
@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="row">
-                <button type="submit" class="btn btn btn btn-outline-secondary col-md-4">Отправить</button>
+                <button type="submit" class="num__submit btn btn btn btn-outline-secondary col-md-4">Отправить</button>
                 </div>
 
             </form>
@@ -34,7 +34,7 @@
     <div class="button__img-cont row">
         <h3 class="custom_title custom_title-right display-4 col-md-6 align-self-center"><b>Шаг 2. Внешний вид кнопки. </b>По умолчанию Ваша кнопка выглядит так</h3>
         <div class="one_click_cont col-md-6" style="width: 250px;">
-            <form action="">
+            <form action="" class="button__cont">
                 <label class="oneclick_phone-label" for="oneclick_phone">
                     <input
                             type="tel"
@@ -53,6 +53,7 @@
                     <a href=""
                        class="one__click-submit"
                        style="
+                    width: 102px;
                     border: 1px solid #2eb025;
                     padding: 8px 20px;
                     color: white;
@@ -70,13 +71,13 @@
         </div>
         <div class="custom_settings-block container">
             <p class="custom_title custom_title-center display-4 col-md-12 align-self-center">Для изменения внешнего вида кнопки откройте раздел <a href="" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                Расширенные настройки
+                Расширенные CSS-настройки
             </a>
             </p>
 
 
         <div class="custom__settings-cont collapse" id="collapseExample">
-            <div class="container">
+            <div class="container ">
                 <div class="row">
                 <div class="input-group input-group-sm mb-3 col-md-4">
                     <div class="container-fluid input_cont">
@@ -84,7 +85,7 @@
                         <div class="input-group-prepend col-md-8">
                         <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Ширина поля ввода, px</span>
                         </div>
-                        <input type="number" class="form-control custom__settings-input col-md-3" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                        <input type="number" class="input__width form-control custom__settings-input col-md-3" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="150">
                     </div>
                     </div>
                 </div>
@@ -94,7 +95,7 @@
                         <div class="input-group-prepend col-md-8">
                             <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Ширина кнопки, px</span>
                         </div>
-                        <input type="number" class="form-control custom__settings-input col-md-3" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                        <input type="number" class="button__width form-control custom__settings-input col-md-3" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="102">
                     </div>
                     </div>
                 </div>
@@ -104,7 +105,7 @@
                         <div class="input-group-prepend col-md-8">
                             <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Цвет border поля ввода</span>
                         </div>
-                        <input type="text" class="form-control custom__settings-input col-md-3" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="#2FB125">
+                        <input type="text" class="input__border-color form-control custom__settings-input col-md-3" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="#2FB125">
                     </div>
                     </div>
                 </div>
@@ -117,7 +118,7 @@
                         <div class="input-group-prepend col-md-8">
                             <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Цвет background кнопки</span>
                         </div>
-                        <input type="text" class="form-control custom__settings-input col-md-3" aria-label="Small" value="#2DBA23" aria-describedby="inputGroup-sizing-sm">
+                        <input type="text" class="button__background form-control custom__settings-input col-md-3" aria-label="Small" value="#2DBA23" aria-describedby="inputGroup-sizing-sm">
                     </div>
                     </div>
                 </div>
@@ -127,7 +128,7 @@
                             <div class="input-group-prepend col-md-8">
                                 <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Цвет border кнопки</span>
                             </div>
-                            <input type="text" class=" custom__settings-input form-control col-md-3" aria-label="Small" value="#2FB125" aria-describedby="inputGroup-sizing-sm">
+                            <input type="text" class="button_border-color custom__settings-input form-control col-md-3" aria-label="Small" value="#2FB125" aria-describedby="inputGroup-sizing-sm">
                         </div>
                         </div>
                     </div>
@@ -137,7 +138,7 @@
                             <div class="input-group-prepend col-md-8">
                                 <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Border-radius, px</span>
                             </div>
-                            <input type="number" class="form-control custom__settings-input col-md-3" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                            <input type="number" class="border__radius form-control custom__settings-input col-md-3" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="4">
                         </div>
                         </div>
                     </div>
@@ -150,7 +151,17 @@
                                 <div class="input-group-prepend col-md-8">
                                     <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Размер шрифта поля ввода, px</span>
                                 </div>
-                                <input type="number" class="form-control custom__settings-input col-md-3" aria-label="Small" value="16" aria-describedby="inputGroup-sizing-sm">
+                                <input type="number" class="input__font-size form-control custom__settings-input col-md-3" aria-label="Small" value="16" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group input-group-sm mb-3 col-md-4">
+                        <div class="container-fluid input_cont">
+                            <div class="row">
+                                <div class="input-group-prepend col-md-8">
+                                    <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Размер шрифта кнопки, px</span>
+                                </div>
+                                <input type="number" class="button__font-size form-control custom__settings-input col-md-3" aria-label="Small" value="16" aria-describedby="inputGroup-sizing-sm">
                             </div>
                         </div>
                     </div>
@@ -160,25 +171,28 @@
                                 <div class="input-group-prepend col-md-8">
                                     <span class="input-group-text custom__settings-label" id="inputGroup-sizing-sm">Толщина границы border, px</span>
                                 </div>
-                                <input type="number" class="form-control custom__settings-input col-md-3" aria-label="Small" value="1" aria-describedby="inputGroup-sizing-sm">
+                                <input type="number" class="border__width form-control custom__settings-input col-md-3" aria-label="Small" value="1" aria-describedby="inputGroup-sizing-sm">
                             </div>
                         </div>
                     </div>
-                    <div class="input-group input-group-sm mb-3 col-md-4">
+
+
+                </div>
+                <div class="row">
+                    <div class="input-group input-group-sm mb-3 col-md-4 offset-8">
                         <button type="submit" class="custom_set-btn btn btn btn btn-outline-secondary ">Применить</button>
                     </div>
-
                 </div>
             </div>
         </div>
         </div>
     </div>
     <div class="button__code-cont row">
-        <h3 class="col-md-10 custom_title display-4 align-self-center"><b>Шаг 3.</b> Скопируйте контейнер кнопки</h3>
+        <h3 class="col-md-10 custom_title display-4 align-self-center"><b>Шаг 3.</b> Скопируйте контейнер кнопки, нажав на кнопку</h3>
         <div class="alert alert-success col-md-12" role="alert">
             <div class="container">
                 <div class="row">
-                    <button type="button" class="col-md-2 copy__btn btn btn-outline-primary">Копировать</button>
+                    <button data-clipboard-target="#copytext" type="button" class="col-md-2 copy__btn btn btn-outline-primary copy-text">Копировать</button>
                 </div>
             </div>
             <div class="container">
@@ -187,21 +201,21 @@
                 </div>
             </div>
             <hr>
-            <pre><code>&lt;div class="one_click_cont"&gt;
+            <pre><code class="client__html" id="copytext">&lt;div class="one_click_cont"&gt; data-num=''
     &lt;a href="https://callme.sipiko.net/viber/order1click/index.php">Кормораздатчики&lt;/a&gt;
 &lt;/div&gt;</code></pre>
         </div>
         <h3 class="col-md-10 custom_title display-4 align-self-center"><b>Шаг 4.</b> Вставьте скопированный контейнер кнопки в html-код Вашего сайта - в то место, где Вы хотите её расположить.</h3>
-        <h3 class="col-md-10 custom_title display-4 align-self-center"><b>Шаг 5.</b> Скопируйте скрипт кнопки</h3>
+        <h3 class="col-md-10 custom_title display-4 align-self-center"><b>Шаг 5.</b> Скопируйте скрипт кнопки, нажав на кнопку</h3>
         <div class="alert alert-success col-md-12" role="alert">
             <div class="container">
                 <div class="row">
 
-                    <button type="button" class="col-md-2 copy__btn btn btn-outline-primary">Копировать</button>
+                    <button type="button" data-clipboard-target="#copyscript" class="col-md-2 copy__btn btn btn-outline-primary copy-script">Копировать</button>
                 </div>
             </div>
             <hr>
-            <pre><code>&lt;script  id="order1click_script" data-viber_id="12345" src="https://callme.sipiko.net/viber/order1click/order1click.js"&gt;&lt;/script&gt;</code></pre>
+            <pre><code id="copyscript">&lt;script  id="order1click_script" data-viber_id="12345" src="https://callme.sipiko.net/viber/order1click/order1click.js"&gt;&lt;/script&gt;</code></pre>
         </div>
         <h3 class="col-md-10 custom_title display-4 align-self-center"><b>Шаг 6.</b> Вставьте скопированный скрипт кнопки в html-код Вашего сайта перед закрывающим тэгом <code>&lt;/body&gt;</code></h3>
 
